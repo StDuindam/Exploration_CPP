@@ -8,7 +8,7 @@
 #include "ShamanDecorator.h"
 #include "Orcs.h"
 #include "SoldierDecorator.h"
-
+#include "Factory.h"
 
 using namespace std;
 
@@ -24,6 +24,10 @@ int main() {
 	SoldierOrc->Render();
 	ShamanElf->Render();
 	
+	Factory newFactory;
+	newFactory.Input();
+	newFactory.DisplayObjects();
+
 	system("Pause");
 	return 0;
 }
